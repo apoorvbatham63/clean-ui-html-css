@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+		
+		.navbar{
+			background-color: #333333b4;
+			padding:18px;
+			text-align: center;
+			width: 105%;	
+		}	
+		.navbar a:hover {
+		color: #f1a03744; /* 👈 Orangish shade */
+		transition: 0.3s; /* 👈 Smooth transition */
+		}
+		.links img:hover {
+		transform: scale(1.4);   /* 🔍 Thoda zoom kare */
+		transition: 0.3s ease;   /* 🔄 Smooth effect */
+		cursor: pointer;         /* 🖱️ Pointer cursor */
+		}
+
+		/* css will apply only a tags */
+		.navbar a{
+			color:white;
+			font-family:sans-serif;
+			font-weight:800;
+			font-size: 9px;
+			padding: 15px;
+			text-decoration: none;
+			padding-top: 10px;	
+		}	
+		body{
+			background-image: url('images/ken_slide_1.jpg');
+			background-size:125%;
+			background-position:center;
+			background-repeat: no-repeat;
+			background-attachment:fixed;
+			margin: 0;
+			height: 100vh;
+			overflow-x:hidden;
+		}
+		.Heading1{
+			text-align: center;
+			color: white;
+			font-family: sans-serif;
+			font-size:70px;
+			margin:0px;
+			
+			
+		}
+		.Heading2{
+			text-align: center;
+			color: white;
+			font-size: 15px;
+			margin-bottom:10px;
+			font-weight:1;
+		}
+		/* Heading positioning */
+		.Heading1{
+			position: absolute;
+			bottom:320px;
+			right: 15px;
+			width: 100%;
+		}
+		/* Heading positioning */
+		.Heading2{
+			position: absolute;
+			bottom: 295px;
+			left: 630px;
+		}
+		/* links adjustment */
+		.links{
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+		/*links positioning (absolute) */
+		.links{
+			position: absolute;
+			top: 21px;
+			right:50px;
+		}
+		/* css will apply on img tags from links */
+		.links img{
+			height: 14px;
+			width: 14px;
+		}
+
+		
+	</style>
+	 
+</head>
+
+<body>
+	<nav>
+	<div class="navbar">
+		<a href="#">HOME</a> 
+		<a href="#">SERVICES</a>
+		<a href="#">WORKS</a>
+		<a href="#">ABOUT</a>
+		<a href="#">BLOG</a>
+		<a href="#">CONTACT</a>
+	</div>
+	</nav>
+
+	<div class="links">
+		<a href="https://www.behance.net" target="_blank">
+		<img src="icons8-behance-50.png" alt="behance_Icon">
+		</a>
+		<a href="https://www.linkedin.com" target="_blank">
+		<img src="icons8-linkedin-32.png" alt="linkedin-Icon">
+		</a>
+		<a href="https://twitter.com" target="_blank">
+		<img src="icons8-twitter-bird-50.png" alt="Twitter-Icon">
+		</a>
+	</div>
+	
+
+
+
+	<h1 class="Heading1"> Dream Big</h1>
+    <h5 class="Heading2">Don't Follow 
+		your dreams,
+		chase them
+	</h5>
+
+	
+
+</body>
+	
+	
+</html>
+
+
+
+
