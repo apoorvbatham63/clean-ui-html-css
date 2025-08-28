@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+	<p id="before result"></p>
+	<p id="after result"></p>
+	
+<script>
+	
+	
+	function reverse(){
+		
+		let num="12345";//taking nums as string
+		let arr =num.split("");//Breaking string into array
+		arr.reverse();		// reverse the array
+		let revnum=arr.join("");//again string
+		
+		document.getElementById("before result").innerHTML="before reverse: "+num;
+		document.getElementById("after result").innerHTML="after reverse: "+revnum;//printing the result inside the function
+	}
+	
+	reverse();//*funtion call*
+	
+</script>
+</body>
+</html>

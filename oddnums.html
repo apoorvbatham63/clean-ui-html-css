@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>First 5 odd numbers divisible by 7 using a while loop.
+</p>
+<p id="result"><p/>
+
+<script>
+let text="";
+let num=1;
+let count=0;
+
+	while(count<5){
+		if(num%7==0 && num%2!=0){
+			text+=num+"<br>";
+			count++;
+		}
+		num++;
+	}
+	document.getElementById("result").innerHTML=text;
+</script>
+</body>
+</html>
+

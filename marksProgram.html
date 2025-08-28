@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+		<p id="result"></p>
+<script>
+let Marks = 80;
+	
+	if(Marks<40){
+		document.getElementById("result").innerHTML=" You are fail";
+	}else if(Marks>=40 && Marks<50){
+		document.getElementById("result").innerHTML="Congratulations!  You are pass";
+	}else if(Marks>=50 && Marks<60){
+		document.getElementById("result").innerHTML=" You are passed with second division";
+	}else if(Marks>=60 && Marks<75){
+		document.getElementById("result").innerHTML=" You are pass with first division";
+	}else{
+		document.getElementById("result").innerHTML=" You have got a distinction.";
+	}
+</script>
+</body>
+</html>

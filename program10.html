@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+<body>
+
+	<p>Write a JavaScript program to take a 2-digit number and then separate these 2 digits, then multiply the first digit by itself for the second digit times. (For example, 23 should be separated as 2 and 3. 2 should multiply with itself 3 times.)</p>
+	<p id="result-for"></p>
+	<p id="result-while"></p>
+	
+<script>
+	let num= prompt("Enter a 2 digit number(for):");//to take input from user
+	let arr=num.split("");//breaking num string to convert it into digits
+	let firstDigit = Number(arr[0]);//first element of array
+	let secondDigit = Number(arr[1]);//second element of array
+	let result=1;//used to multiplication with secondDigit
+	
+	for(let i=1; i<=secondDigit; i++){//loop will run no.of secondDigit
+		result=result*firstDigit;//count 1: result(1)=1*first(2): result=1*2(2) and so on.
+	}
+	document.getElementById("result-for").innerHTML="Using for loop<br>"+"Num = "+num+"<br> Answer = " +result;
+	
+	let whileNum = prompt("Enter a 2 digit number(while):");
+	let arrWhile=whileNum.split("");
+	let firstwhile = Number(arrWhile[0]);
+	let secondwhile = Number(arrWhile[1]);
+	let count=0;
+	let resultwhile=1;
+	
+		while(count<secondwhile){
+			resultwhile=resultwhile*firstwhile;
+			count++;
+		}
+		document.getElementById("result-while").innerHTML="Using while loop<br>"+"Num = "+whileNum+"<br> Answer = " +resultwhile;
+</script>
+</body>
+</html>
+
+
